@@ -109,7 +109,7 @@ class _PDFState extends State<PDF> {
 
   String getFileName() {
     if(widget.filename?.isEmpty ?? true){
-      getLetterAndDigits(widget.assetsPath ?? widget.networkURL);
+      return getLetterAndDigits(widget.assetsPath ?? widget.networkURL);
     }
     else{
       return getLetterAndDigits(widget.assetsPath ?? widget.filename);
